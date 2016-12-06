@@ -112,7 +112,7 @@ public class MainActivity extends Activity {
         mTypeWriterInterpolator = new LinearInterpolator();
 
         testBtn1.setOnClickListener((v)->{
-            startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
+            startActivity(new Intent(MainActivity.this, TestTextActivity.class));
         });
 
         testBtn2.setOnClickListener((v)->{

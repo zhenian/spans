@@ -2,9 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.antfortune.freeline'
+apply plugin: 'com.jakewharton.butterknife'
 
 dependencies {
     compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
 }
 
 android {
