@@ -65,6 +65,10 @@ public class MainActivity extends Activity {
     private Button mBtnSpanIt;
     private Spinner mSpinner;
 
+
+    private Button testBtn1;
+    private Button testBtn2;
+
     private int mTextColor;
 
     private String mBaconIpsum;
@@ -84,6 +88,8 @@ public class MainActivity extends Activity {
 
         mText = (TextView) findViewById(R.id.text);
         mBtnAnimateColor = (Button) findViewById(R.id.btn_animate_color);
+        testBtn1 = (Button) findViewById(R.id.test_btn_1);
+        testBtn2 = (Button) findViewById(R.id.test_btn_2);
         mBtnDraw1 = (Button) findViewById(R.id.btn_draw1);
         mBtnDraw2 = (Button) findViewById(R.id.btn_draw2);
         mBtnDraw3 = (Button) findViewById(R.id.btn_draw3);
@@ -104,6 +110,14 @@ public class MainActivity extends Activity {
 
         mSmoothInterpolator = new AccelerateDecelerateInterpolator();
         mTypeWriterInterpolator = new LinearInterpolator();
+
+        testBtn1.setOnClickListener((v)->{
+            startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
+        });
+
+        testBtn2.setOnClickListener((v)->{
+
+        });
 
         mBtnAnimateColor.setOnClickListener(new View.OnClickListener() {
             @Override

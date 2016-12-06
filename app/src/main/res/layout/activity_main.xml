@@ -19,6 +19,27 @@
             android:textColor="@color/text_color"
             android:textSize="16sp"/>
 
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/test_btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Test btn1!"/>
+
+
+            <Button
+                android:id="@+id/test_btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Test Btn 2!"/>
+        </LinearLayout>
+
         <Button
             android:id="@+id/btn_animate_color"
             android:layout_width="match_parent"

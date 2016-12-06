@@ -27,6 +27,12 @@
             android:label="ViewPager"
             android:theme="@style/AppTheme.ViewPagerTheme">
         </activity>
+        <activity
+            android:name="com.flavienlaurent.spanimated.TestTextActivity"
+            android:label="ViewPager"
+            android:theme="@style/AppTheme.ViewPagerTheme">
+        </activity>
+
     </application>
 
 </manifest>
